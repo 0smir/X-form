@@ -1,0 +1,47 @@
+%navlink{
+  //display: block;
+  font-size: 1.6rem;
+  padding: 2.5rem 0;
+  color: $mineShaft;
+  border-bottom: $borderNavLink;
+}
+
+nav{
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li{
+    display: inline-block;
+    margin: 0 2.5rem;
+  }
+
+  li:last-child{
+    margin-right: 0;
+  }
+
+  a:link{
+    @extend %navlink;
+  }
+
+  a:visited{
+    @extend %navlink;
+  }
+
+
+  a:hover{
+    @extend %navlink;
+    border-bottom: $borderNavLinkHover;
+  }
+
+  button{
+    //TODO add styles for button:hover
+  }
+
+  input{
+    //TODO add styles
+    display: none;
+  }
+}

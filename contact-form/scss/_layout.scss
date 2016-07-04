@@ -1,0 +1,5 @@
+.inner-container{
+  padding: $containerVerIndent $containerHorIndent;
+  @include border-radius(5px);
+  box-shadow: $shadow;
+}

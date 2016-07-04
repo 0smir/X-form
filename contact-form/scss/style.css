@@ -1,0 +1,199 @@
+@import url(../bootstrap/css/bootstrap.css);
+@font-face {
+  font-family: "Lato Regular";
+  src: url("../fonts/lato/regular/Lato-Regular.eot");
+  src: url("../fonts/lato/regular/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/regular/Lato-Regular.woff2") format("woff2"), url("../fonts/lato/regular/Lato-Regular.woff") format("woff"), url("../fonts/lato/regular/Lato-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "Lato Bold";
+  src: url("../fonts/lato/bold/Lato-Bold.eot");
+  src: url("../fonts/lato/bold/Lato-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/bold/Lato-Bold.woff2") format("woff2"), url("../fonts/lato/bold/Lato-Bold.woff") format("woff"), url("../fonts/lato/bold/Lato-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "Lato Bold Italic";
+  src: url("../fonts/lato/bolditalic/Lato-BoldItalic.eot");
+  src: url("../fonts/lato/bolditalic/Lato-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/bolditalic/Lato-BoldItalic.woff2") format("woff2"), url("../fonts/lato/bolditalic/Lato-BoldItalic.woff") format("woff"), url("../fonts/lato/bolditalic/Lato-BoldItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: normal; }
+.pull-left {
+  float: left; }
+
+.pull-right {
+  float: right; }
+
+.cf:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
+.text-justify {
+  text-align: justify; }
+
+.center {
+  margin: 0 auto; }
+
+.text-uppercase {
+  text-transform: uppercase; }
+
+.text-capitalize {
+  text-transform: capitalize; }
+
+.text-bold {
+  font-weight: bold; }
+
+.inline {
+  display: inline; }
+
+.block {
+  display: block; }
+
+.inline-block {
+  display: inline-block; }
+
+.bg-white.bg-white {
+  background-color: #ffffff; }
+
+.bg-gray.bg-gray {
+  background-color: #f7f9fc; }
+
+.text-dark-gray.text-dark-gray {
+  color: #333333; }
+
+.text-light-gray.text-light-gray {
+  color: #585858; }
+
+.text-violet.text-violet {
+  color: #5c6bc0; }
+
+.active.active {
+  color: #bdbdbd; }
+
+html {
+  font-size: 10px; }
+
+body {
+  font-size: 2rem;
+  font-family: "Lato Regular";
+  background: #f7f9fc;
+  line-height: 1.7;
+  padding: 7rem 0; }
+
+a,
+.link {
+  text-decoration: none; }
+  a:hover, a:focus,
+  .link:hover,
+  .link:focus {
+    text-decoration: none; }
+
+p {
+  font-size: 1.7rem;
+  font-family: "Lato Regular"; }
+
+p:last-of-type {
+  padding-bottom: 3rem; }
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin: 0; }
+
+.h1, .h2 {
+  line-height: 1.7; }
+
+.h1 {
+  font-size: 4.2rem;
+  font-family: "Lato Bold Italic"; }
+
+.h2 {
+  font-size: 4rem;
+  font-family: "Lato Bold"; }
+
+.inner-container {
+  padding: 8rem 9.7rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px 12px rgba(51, 51, 51, 0.1); }
+
+nav a:link, nav a:visited, nav a:hover {
+  font-size: 1.6rem;
+  padding: 2.5rem 0;
+  color: #333333;
+  border-bottom: 2px solid transparent; }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+nav li {
+  display: inline-block;
+  margin: 0 2.5rem; }
+nav li:last-child {
+  margin-right: 0; }
+nav a:hover {
+  border-bottom: 2px solid #5c6bc0; }
+nav input {
+  display: none; }
+
+.input {
+  background-color: #f7f9fc;
+  color: #585858;
+  border: 1px solid transparent;
+  margin-bottom: 3rem;
+  padding: 1.5rem 3rem;
+  line-height: 1.2;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px; }
+
+form {
+  border-top: 2px solid #eeeeee;
+  padding-top: 5rem; }
+  form input[type="text"],
+  form input[type="mail"],
+  form input[type="search"],
+  form input[type="email"],
+  form textarea {
+    width: 100%; }
+  form textarea {
+    min-height: 15rem;
+    overflow: auto; }
+  form input::-webkit-input-placeholder,
+  form textarea::-webkit-input-placeholder {
+    color: rgba(51, 51, 51, 0.3); }
+
+.btn {
+  text-align: center;
+  font-family: "Lato Bold";
+  font-size: 2.4rem;
+  border: 1px solid transparent;
+  background-color: transparent; }
+
+.btn-search {
+  font-size: 1.6rem; }
+
+.btn-send {
+  font-size: 2.4rem;
+  color: #5c6bc0; }
+
+header {
+  margin-bottom: 7rem; }
+
+/*# sourceMappingURL=style.css.map */

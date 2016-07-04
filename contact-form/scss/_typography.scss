@@ -1,0 +1,67 @@
+html {
+  font-size: 10px; // static
+}
+
+body{
+  font-size: 2rem;
+  font-family: "Lato Regular";
+  background: $pastelGray;
+  line-height: 1.7;
+  padding: 7rem 0;
+}
+
+// --------Links--------
+
+
+a,
+.link {
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+
+    text-decoration: none;
+  }
+}
+
+//------Text-----
+
+p {
+  font-size: 1.7rem;
+  font-family: "Lato Regular";
+}
+
+p:last-of-type{
+  padding-bottom: 3rem;
+}
+
+
+
+// ------Headings------
+
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6{
+ margin: 0;
+}
+
+.h1, .h2{
+  line-height: 1.7;
+}
+
+.h1 {
+  font-size: 4.2rem;
+  font-family: "Lato Bold Italic";
+}
+
+.h2 {
+  font-size: 4rem;
+  font-family: "Lato Bold";
+}
+
+
+

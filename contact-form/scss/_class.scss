@@ -1,0 +1,110 @@
+//-------Floated Elements-------
+
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.cf {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+// -------Aligning Elements-------
+
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+.center{
+  margin: 0 auto;
+}
+
+.text-uppercase{
+  text-transform: uppercase;
+}
+
+.text-capitalize{
+  text-transform: capitalize;
+}
+
+.text-bold{
+  font-weight: bold;
+}
+
+
+// ------- Display Values --------
+
+
+.inline {
+  display: inline;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+// -------Background colors ------
+
+.bg-white{
+  &.bg-white{
+    background-color: $white;
+  }
+}
+
+.bg-gray{
+  &.bg-gray{
+    background-color: $pastelGray;
+  }
+}
+
+// ---- Text colors ---
+  .text-dark-gray{
+    &.text-dark-gray{
+      color: $textColorDark;
+    }
+  }
+
+  .text-light-gray{
+    &.text-light-gray{
+      color: $maincontentText;
+    }
+  }
+
+  .text-violet{
+    &.text-violet{
+      color: $mediumslateblue;
+    }
+  }
+
+
+//---- Activity -------
+
+.active{
+  &.active{
+    color: $iron;
+  }
+}

@@ -1,0 +1,32 @@
+//----Colors----
+
+$pastelGray: #f7f9fc; //main bg color
+$mineShaft: #333333; //color for headers
+$iron: #bdbdbd; //active menu
+$white: #ffffff;
+$corduroy: #585858; //color of paragraph
+$mercury: #eeeeee; // line
+$concreteLight: #f7f9fc; // inputs bg
+$mediumslateblue: #5c6bc0; // button-submit text
+
+
+//----Text colors ---
+
+$textColorDark: $mineShaft;
+$maincontentText: $corduroy;
+
+
+//----Borders---
+$backgroundTransparent: transparent;
+$borderTransparent: 1px solid transparent;
+$borderNavLink: 2px solid transparent;
+$borderNavLinkHover: 2px solid $mediumslateblue;
+$borderForm: 2px solid $mercury;
+
+// ----Shadow---
+$shadow: 0px 0px 30px 12px rgba(51, 51, 51, 0.1);
+
+// ---- Padding----
+
+$containerHorIndent: 9.7rem;
+$containerVerIndent: 8rem;
