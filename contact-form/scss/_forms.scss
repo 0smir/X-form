@@ -5,12 +5,13 @@
   margin-bottom: 3rem;
   padding: 1.5rem 3rem;
   line-height: 1.2;
+  //box-sizing: border-box;
   @include border-radius(3px);
 }
 
 
 
-form{
+#contact-us{
 
   border-top: $borderForm;
   padding-top: 5rem;
@@ -27,11 +28,46 @@ form{
   textarea{
     min-height: 15rem;
     overflow: auto;
+    box-sizing: border-box;
   }
 
+}
+
+#main-search{
+  line-height: 8rem;
+  min-height: 8rem;
+  text-align: center;
+  //visibility: hidden;
+
+  label{
+    color: $textViolet;
+    line-height: 8rem;
+    vertical-align: middle;
+    margin-right: 2rem;
+  }
+
+  input[type="search"]{
+    border: $borderInput;
+    //-webkit-transform-origin: left center;
+    //transform-origin: left top;
+    transition: width 1s ease;
+    width: 30%;
+  }
+
+  button{
+    font-size: 2.4rem;
+  }
+
+  input[type="search"]:focus{
+    width: 50%;
+    -webkit-transform-origin: left;
+    transform-origin: left;
+  }
+}
+
+form{
   input::-webkit-input-placeholder,
   textarea::-webkit-input-placeholder{
-    color: rgba(51, 51, 51, .3);
-
+    color: rgba(51, 51, 51, .2);
   }
 }

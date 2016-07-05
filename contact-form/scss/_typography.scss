@@ -4,7 +4,7 @@ html {
 
 body{
   font-size: 2rem;
-  font-family: "Lato Regular";
+  font-family: "Lato Regular", sans-serif;
   background: $pastelGray;
   line-height: 1.7;
   padding: 7rem 0;
@@ -28,7 +28,7 @@ a,
 
 p {
   font-size: 1.7rem;
-  font-family: "Lato Regular";
+  font-family: "Lato Regular", sans-serif;
 }
 
 p:last-of-type{
@@ -55,12 +55,12 @@ p:last-of-type{
 
 .h1 {
   font-size: 4.2rem;
-  font-family: "Lato Bold Italic";
+  font-family: "Lato Bold Italic", sans-serif;
 }
 
 .h2 {
   font-size: 4rem;
-  font-family: "Lato Bold";
+  font-family: "Lato Bold", sans-serif;
 }
 
 

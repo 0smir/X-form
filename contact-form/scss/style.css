@@ -84,7 +84,7 @@ html {
 
 body {
   font-size: 2rem;
-  font-family: "Lato Regular";
+  font-family: "Lato Regular", sans-serif;
   background: #f7f9fc;
   line-height: 1.7;
   padding: 7rem 0; }
@@ -99,7 +99,7 @@ a,
 
 p {
   font-size: 1.7rem;
-  font-family: "Lato Regular"; }
+  font-family: "Lato Regular", sans-serif; }
 
 p:last-of-type {
   padding-bottom: 3rem; }
@@ -117,11 +117,11 @@ p:last-of-type {
 
 .h1 {
   font-size: 4.2rem;
-  font-family: "Lato Bold Italic"; }
+  font-family: "Lato Bold Italic", sans-serif; }
 
 .h2 {
   font-size: 4rem;
-  font-family: "Lato Bold"; }
+  font-family: "Lato Bold", sans-serif; }
 
 .inner-container {
   padding: 8rem 9.7rem;
@@ -132,24 +132,25 @@ p:last-of-type {
   box-shadow: 0px 0px 30px 12px rgba(51, 51, 51, 0.1); }
 
 nav a:link, nav a:visited, nav a:hover {
+  display: block;
+  height: 100%;
   font-size: 1.6rem;
-  padding: 2.5rem 0;
+  padding: 2.1rem 0;
   color: #333333;
   border-bottom: 2px solid transparent; }
 
 nav ul {
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+  font-size: 0; }
 nav li {
   display: inline-block;
-  margin: 0 2.5rem; }
+  margin: 0 1.5rem; }
 nav li:last-child {
   margin-right: 0; }
 nav a:hover {
   border-bottom: 2px solid #5c6bc0; }
-nav input {
-  display: none; }
 
 .input {
   background-color: #f7f9fc;
@@ -163,21 +164,43 @@ nav input {
   -ms-border-radius: 3px;
   border-radius: 3px; }
 
-form {
+#contact-us {
   border-top: 2px solid #eeeeee;
   padding-top: 5rem; }
-  form input[type="text"],
-  form input[type="mail"],
-  form input[type="search"],
-  form input[type="email"],
-  form textarea {
+  #contact-us input[type="text"],
+  #contact-us input[type="mail"],
+  #contact-us input[type="search"],
+  #contact-us input[type="email"],
+  #contact-us textarea {
     width: 100%; }
-  form textarea {
+  #contact-us textarea {
     min-height: 15rem;
-    overflow: auto; }
-  form input::-webkit-input-placeholder,
-  form textarea::-webkit-input-placeholder {
-    color: rgba(51, 51, 51, 0.3); }
+    overflow: auto;
+    box-sizing: border-box; }
+
+#main-search {
+  line-height: 8rem;
+  min-height: 8rem;
+  text-align: center; }
+  #main-search label {
+    color: #5c6bc0;
+    line-height: 8rem;
+    vertical-align: middle;
+    margin-right: 2rem; }
+  #main-search input[type="search"] {
+    border: 1px solid #5c6bc0;
+    transition: width 1s ease;
+    width: 30%; }
+  #main-search button {
+    font-size: 2.4rem; }
+  #main-search input[type="search"]:focus {
+    width: 50%;
+    -webkit-transform-origin: left;
+    transform-origin: left; }
+
+form input::-webkit-input-placeholder,
+form textarea::-webkit-input-placeholder {
+  color: rgba(51, 51, 51, 0.2); }
 
 .btn {
   text-align: center;
@@ -192,8 +215,5 @@ form {
 .btn-send {
   font-size: 2.4rem;
   color: #5c6bc0; }
-
-header {
-  margin-bottom: 7rem; }
 
 /*# sourceMappingURL=style.css.map */

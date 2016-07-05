@@ -1,7 +1,8 @@
 %navlink{
-  //display: block;
+  display: block;
+  height: 100%;
   font-size: 1.6rem;
-  padding: 2.5rem 0;
+  padding: 2.1rem 0;
   color: $mineShaft;
   border-bottom: $borderNavLink;
 }
@@ -11,11 +12,12 @@ nav{
     margin: 0;
     padding: 0;
     list-style: none;
+    font-size: 0;
   }
 
   li{
     display: inline-block;
-    margin: 0 2.5rem;
+    margin: 0 1.5rem;
   }
 
   li:last-child{
@@ -39,9 +41,5 @@ nav{
   button{
     //TODO add styles for button:hover
   }
-
-  input{
-    //TODO add styles
-    display: none;
-  }
+  
 }
