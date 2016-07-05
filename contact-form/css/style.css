@@ -189,31 +189,40 @@ nav a:hover {
     margin-right: 2rem; }
   #main-search input[type="search"] {
     border: 1px solid #5c6bc0;
-    transition: width 1s ease;
+    margin-right: 2rem;
+    transition: width .3s ease;
     width: 30%; }
   #main-search button {
-    font-size: 2.4rem; }
+    font-size: 2.4rem;
+    line-height: 5rem;
+    padding: 0 1rem; }
   #main-search input[type="search"]:focus {
-    width: 50%;
-    -webkit-transform-origin: left;
-    transform-origin: left; }
+    width: 50%; }
 
 form input::-webkit-input-placeholder,
 form textarea::-webkit-input-placeholder {
   color: rgba(51, 51, 51, 0.2); }
 
-.btn {
+.btn, .btn-search:hover {
   text-align: center;
   font-family: "Lato Bold";
   font-size: 2.4rem;
   border: 1px solid transparent;
   background-color: transparent; }
 
-.btn-search {
+.btn-search, .btn-search:hover {
   font-size: 1.6rem; }
 
 .btn-send {
   font-size: 2.4rem;
   color: #5c6bc0; }
+
+.btn-search:hover {
+  background: #ffffff;
+  border: 1px solid #5c6bc0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px; }
 
 /*# sourceMappingURL=style.css.map */

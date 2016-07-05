@@ -48,20 +48,19 @@
 
   input[type="search"]{
     border: $borderInput;
-    //-webkit-transform-origin: left center;
-    //transform-origin: left top;
-    transition: width 1s ease;
+    margin-right: 2rem;
+    transition: width .3s ease;
     width: 30%;
   }
 
   button{
     font-size: 2.4rem;
+    line-height: 5rem;
+    padding: 0 1rem;
   }
 
   input[type="search"]:focus{
     width: 50%;
-    -webkit-transform-origin: left;
-    transform-origin: left;
   }
 }
 
