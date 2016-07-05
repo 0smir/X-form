@@ -10,6 +10,7 @@ body{
   background: $pastelGray;
   line-height: 1.7;
   padding: 7rem 0;
+  @include breakpoint(extrasmall){padding: 3rem 0;}
 }
 
 // --------Links--------
@@ -30,10 +31,18 @@ a,
 p {
   font-size: 1.7rem;
   font-family: $primeryRegular;
+  //@include breakpoint(large){padding-bottom: 1.7rem;}
+  //@include breakpoint(medium){font-size: 1.7rem;}
+  //@include breakpoint(small){font-size: 1.7rem;}
+  @include breakpoint(extrasmall){font-size: 1.5rem;}
 }
 
 p:last-of-type{
   padding-bottom: 3rem;
+  @include breakpoint(large){padding-bottom: 3rem;}
+  @include breakpoint(medium){padding-bottom: 3rem;}
+  @include breakpoint(small){padding-bottom: 3rem;}
+  @include breakpoint(extrasmall){padding-bottom: 2rem;}
 }
 
 
@@ -46,7 +55,8 @@ p:last-of-type{
 .h3,
 .h4,
 .h5,
-.h6{
+.h6,
+p{
  margin: 0;
 }
 
@@ -57,11 +67,13 @@ p:last-of-type{
 .h1 {
   font-size: 4.2rem;
   font-family: $primeryBoldItalick;
+  @include breakpoint(extrasmall){font-size: 3.8rem;}
 }
 
 .h2 {
   font-size: 4rem;
   font-family: $primeryBold;
+  @include breakpoint(extrasmall){font-size: 3.2rem;}
 }
 
 

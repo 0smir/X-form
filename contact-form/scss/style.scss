@@ -3,16 +3,54 @@
 @import "fonts";
 @import "core";
 
-header{
-  //border: 1px solid red;
-  //margin-bottom: 7rem;
-}
+//header{
+//  border: 1px solid red;
+//  margin-bottom: 7rem;
+//}
 //
 //.container{
 //  border: 1px solid green;
 //}
 
 
-@media screen and (max-width: 320px){
-  
-}
+//@media only screen and (max-width: 320px){
+//
+//  body{
+//    font-size: 1.4rem;
+//    padding: 3rem 0;
+//  }
+//
+//  header{
+//    margin-bottom: 3rem;
+//  }
+
+//  .inner-container{
+//    padding: 1rem 1rem 2rem;
+//  }
+//
+//
+//  .h2{
+//    font-size: 3rem;
+//  }
+//
+//}
+
+//@media only screen and (min-width: 321px) and (max-width: 479px){
+//
+//  body{
+//    font-size: 1.4rem;
+//    padding: 3rem 0;
+//  }
+//
+//  header{
+//    margin-bottom: 3rem;
+//  }
+//  .inner-container{
+//    padding: 1rem 2.5rem 4rem;
+//  }
+//
+//}
+//
+//@media only screen and (min-width: 480px) and (max-width: 767px){
+//
+//}

@@ -4,3 +4,20 @@
   -ms-border-radius: $radius;
   border-radius: $radius;
 }
+
+//---Media queries--
+
+@mixin breakpoint($point) {
+  @if $point == large {
+    @media (min-width: 120rem) { @content; }
+  }
+  @else if $point == medium {
+    @media (min-width: 99.2rem) { @content; }
+  }
+  @else if $point == small {
+    @media (min-width: 76.8rem) { @content; }
+  }
+  @else if $point == extrasmall {
+    @media (max-width: 32rem)  { @content; }
+  }
+}

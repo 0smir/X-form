@@ -7,6 +7,10 @@
   border-bottom: $borderNavLink;
 }
 
+header{
+  @include breakpoint(extrasmall){margin-bottom: 3rem;}
+}
+
 nav{
   ul{
     margin: 0;
@@ -36,6 +40,12 @@ nav{
 }
 
 .mobile-nav{
+  line-height: 7.1rem;
+
+  button{
+    vertical-align: middle;
+  }
+
   span{
     width: 4rem;
     height: 4px;
@@ -43,4 +53,5 @@ nav{
     margin-bottom: 1rem;
     background-color: $mineShaft;
   }
+
 }

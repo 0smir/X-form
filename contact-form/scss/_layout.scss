@@ -2,4 +2,5 @@
   padding: $containerVerIndent $containerHorIndent;
   @include border-radius(5px);
   box-shadow: $shadow;
+  @include breakpoint(extrasmall){padding: 1rem 1.5rem 2rem;}
 }

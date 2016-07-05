@@ -91,6 +91,9 @@ body {
   background: #f7f9fc;
   line-height: 1.7;
   padding: 7rem 0; }
+  @media (max-width: 32rem) {
+    body {
+      padding: 3rem 0; } }
 
 a,
 .link {
@@ -103,16 +106,32 @@ a,
 p {
   font-size: 1.7rem;
   font-family: "Lato Regular", Helvetica, Arial, sans-serif; }
+  @media (max-width: 32rem) {
+    p {
+      font-size: 1.5rem; } }
 
 p:last-of-type {
   padding-bottom: 3rem; }
+  @media (min-width: 120rem) {
+    p:last-of-type {
+      padding-bottom: 3rem; } }
+  @media (min-width: 99.2rem) {
+    p:last-of-type {
+      padding-bottom: 3rem; } }
+  @media (min-width: 76.8rem) {
+    p:last-of-type {
+      padding-bottom: 3rem; } }
+  @media (max-width: 32rem) {
+    p:last-of-type {
+      padding-bottom: 2rem; } }
 
 .h1,
 .h2,
 .h3,
 .h4,
 .h5,
-.h6 {
+.h6,
+p {
   margin: 0; }
 
 .h1, .h2 {
@@ -121,10 +140,16 @@ p:last-of-type {
 .h1 {
   font-size: 4.2rem;
   font-family: "Lato Bold Italic", Helvetica, Arial, sans-serif; }
+  @media (max-width: 32rem) {
+    .h1 {
+      font-size: 3.8rem; } }
 
 .h2 {
   font-size: 4rem;
   font-family: "Lato Bold", Helvetica, Arial, sans-serif; }
+  @media (max-width: 32rem) {
+    .h2 {
+      font-size: 3.2rem; } }
 
 .inner-container {
   padding: 8rem 9.7rem;
@@ -133,6 +158,9 @@ p:last-of-type {
   -ms-border-radius: 5px;
   border-radius: 5px;
   box-shadow: 0px 0px 30px 12px rgba(51, 51, 51, 0.1); }
+  @media (max-width: 32rem) {
+    .inner-container {
+      padding: 1rem 1.5rem 2rem; } }
 
 nav a:link,
 nav a:visited, nav a:hover {
@@ -142,6 +170,10 @@ nav a:visited, nav a:hover {
   padding: 2.1rem 0;
   color: #333333;
   border-bottom: 2px solid transparent; }
+
+@media (max-width: 32rem) {
+  header {
+    margin-bottom: 3rem; } }
 
 nav ul {
   margin: 0;
@@ -156,12 +188,16 @@ nav li:last-child {
 nav a:hover {
   border-bottom: 2px solid #5c6bc0; }
 
-.mobile-nav span {
-  width: 4rem;
-  height: 4px;
-  display: block;
-  margin-bottom: 1rem;
-  background-color: #333333; }
+.mobile-nav {
+  line-height: 7.1rem; }
+  .mobile-nav button {
+    vertical-align: middle; }
+  .mobile-nav span {
+    width: 4rem;
+    height: 4px;
+    display: block;
+    margin-bottom: 1rem;
+    background-color: #333333; }
 
 .input {
   background-color: #f7f9fc;
