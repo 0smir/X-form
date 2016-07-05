@@ -5,8 +5,9 @@
   margin-bottom: 3rem;
   padding: 1.5rem 3rem;
   line-height: 1.2;
-  //box-sizing: border-box;
   @include border-radius(3px);
+  @include breakpoint(small){padding: 1rem 2rem;}
+  @include breakpoint(extrasmall){padding: 1rem 1.5rem;}
 }
 
 
@@ -15,13 +16,24 @@
 
   border-top: $borderForm;
   padding-top: 5rem;
+  @include breakpoint(extrasmall){padding-top: 3rem;}
 
-  input[type="text"],
-  input[type="mail"],
-  input[type="search"],
-  input[type="email"],
+  input,
   textarea{
-    width: 100%; //todo add width 50% for name and mail
+    width: 100%;
+  }
+
+  input:first-of-type{
+    margin-right: 4%;
+    @include breakpoint(small){margin-right: 0;}
+    @include breakpoint(extrasmall){margin-right: 0;}
+  }
+
+  input:first-of-type,
+  input:first-of-type + input{
+    width: 48%;
+    @include breakpoint(small){width: 100%;}
+    @include breakpoint(extrasmall){width: 100%;}
   }
 
 

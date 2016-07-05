@@ -91,9 +91,17 @@ body {
   background: #f7f9fc;
   line-height: 1.7;
   padding: 7rem 0; }
-  @media (max-width: 32rem) {
+  @media (max-width: 991px) {
     body {
-      padding: 3rem 0; } }
+      padding: 5rem 0; } }
+  @media (max-width: 767px) {
+    body {
+      padding: 4rem 0;
+      font-size: 1.7rem; } }
+  @media (max-width: 320px) {
+    body {
+      padding: 3rem 0;
+      font-size: 1.5rem; } }
 
 a,
 .link {
@@ -105,23 +113,21 @@ a,
 
 p {
   font-size: 1.7rem;
+  margin-bottom: 0.5rem;
   font-family: "Lato Regular", Helvetica, Arial, sans-serif; }
-  @media (max-width: 32rem) {
+  @media (max-width: 767px) {
+    p {
+      font-size: 1.6rem; } }
+  @media (max-width: 320px) {
     p {
       font-size: 1.5rem; } }
 
 p:last-of-type {
   padding-bottom: 3rem; }
-  @media (min-width: 120rem) {
+  @media (max-width: 767px) {
     p:last-of-type {
-      padding-bottom: 3rem; } }
-  @media (min-width: 99.2rem) {
-    p:last-of-type {
-      padding-bottom: 3rem; } }
-  @media (min-width: 76.8rem) {
-    p:last-of-type {
-      padding-bottom: 3rem; } }
-  @media (max-width: 32rem) {
+      padding-bottom: 2rem; } }
+  @media (max-width: 320px) {
     p:last-of-type {
       padding-bottom: 2rem; } }
 
@@ -130,8 +136,7 @@ p:last-of-type {
 .h3,
 .h4,
 .h5,
-.h6,
-p {
+.h6 {
   margin: 0; }
 
 .h1, .h2 {
@@ -140,14 +145,17 @@ p {
 .h1 {
   font-size: 4.2rem;
   font-family: "Lato Bold Italic", Helvetica, Arial, sans-serif; }
-  @media (max-width: 32rem) {
+  @media (max-width: 320px) {
     .h1 {
       font-size: 3.8rem; } }
 
 .h2 {
   font-size: 4rem;
   font-family: "Lato Bold", Helvetica, Arial, sans-serif; }
-  @media (max-width: 32rem) {
+  @media (max-width: 767px) {
+    .h2 {
+      font-size: 3.6rem; } }
+  @media (max-width: 320px) {
     .h2 {
       font-size: 3.2rem; } }
 
@@ -158,7 +166,13 @@ p {
   -ms-border-radius: 5px;
   border-radius: 5px;
   box-shadow: 0px 0px 30px 12px rgba(51, 51, 51, 0.1); }
-  @media (max-width: 32rem) {
+  @media (max-width: 991px) {
+    .inner-container {
+      padding: 4rem 5rem; } }
+  @media (max-width: 767px) {
+    .inner-container {
+      padding: 1rem 2.5rem 4rem; } }
+  @media (max-width: 320px) {
     .inner-container {
       padding: 1rem 1.5rem 2rem; } }
 
@@ -171,7 +185,10 @@ nav a:visited, nav a:hover {
   color: #333333;
   border-bottom: 2px solid transparent; }
 
-@media (max-width: 32rem) {
+@media (max-width: 767px) {
+  header {
+    margin-bottom: 3rem; } }
+@media (max-width: 320px) {
   header {
     margin-bottom: 3rem; } }
 
@@ -210,16 +227,41 @@ nav a:hover {
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   border-radius: 3px; }
+  @media (max-width: 767px) {
+    .input {
+      padding: 1rem 2rem; } }
+  @media (max-width: 320px) {
+    .input {
+      padding: 1rem 1.5rem; } }
 
 #contact-us {
   border-top: 2px solid #eeeeee;
   padding-top: 5rem; }
-  #contact-us input[type="text"],
-  #contact-us input[type="mail"],
-  #contact-us input[type="search"],
-  #contact-us input[type="email"],
+  @media (max-width: 320px) {
+    #contact-us {
+      padding-top: 3rem; } }
+  #contact-us input,
   #contact-us textarea {
     width: 100%; }
+  #contact-us input:first-of-type {
+    margin-right: 4%; }
+    @media (max-width: 767px) {
+      #contact-us input:first-of-type {
+        margin-right: 0; } }
+    @media (max-width: 320px) {
+      #contact-us input:first-of-type {
+        margin-right: 0; } }
+  #contact-us input:first-of-type,
+  #contact-us input:first-of-type + input {
+    width: 48%; }
+    @media (max-width: 767px) {
+      #contact-us input:first-of-type,
+      #contact-us input:first-of-type + input {
+        width: 100%; } }
+    @media (max-width: 320px) {
+      #contact-us input:first-of-type,
+      #contact-us input:first-of-type + input {
+        width: 100%; } }
   #contact-us textarea {
     min-height: 15rem;
     overflow: auto;

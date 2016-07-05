@@ -8,6 +8,7 @@
 }
 
 header{
+  @include breakpoint(small){margin-bottom: 3rem;}
   @include breakpoint(extrasmall){margin-bottom: 3rem;}
 }
 
