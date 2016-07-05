@@ -213,8 +213,8 @@ nav a:hover {
     width: 4rem;
     height: 4px;
     display: block;
-    margin-bottom: 1rem;
-    background-color: #333333; }
+    background-color: #333333;
+    vertical-align: middle; }
 
 .input {
   background-color: #f7f9fc;
@@ -308,6 +308,21 @@ form textarea::-webkit-input-placeholder {
 .btn-send {
   font-size: 2.4rem;
   color: #5c6bc0; }
+
+.mini-nav {
+  line-height: 5rem;
+  height: 5rem;
+  width: 5rem;
+  padding: 0 4px;
+  border: 1px solid red;
+  position: relative; }
+  .mini-nav .item1,
+  .mini-nav .item3 {
+    position: absolute; }
+  .mini-nav .item1 {
+    top: 10px; }
+  .mini-nav .item3 {
+    bottom: 10px; }
 
 .btn:hover, .mini-nav:hover,
 .btn:focus,

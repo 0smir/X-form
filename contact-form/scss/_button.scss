@@ -14,6 +14,28 @@
   color: $mediumslateblue;
 }
 
+.mini-nav{
+  line-height: 5rem;
+  height: 5rem;
+  width: 5rem;
+  padding: 0 4px;
+  border: 1px solid red;
+  position: relative;
+
+  .item1,
+  .item3{
+    position: absolute;
+  }
+
+  .item1{
+    top: 10px;
+  }
+
+  .item3{
+    bottom: 10px;
+  }
+
+}
 
 .btn:hover,
 .btn:focus{
