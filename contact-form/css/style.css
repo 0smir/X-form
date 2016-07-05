@@ -176,8 +176,8 @@ p:last-of-type {
     .inner-container {
       padding: 1rem 1.5rem 2rem; } }
 
-nav a:link,
-nav a:visited, nav a:hover {
+header nav a:link,
+header nav a:visited, header nav a:hover, #menu nav a, #menu a:hover {
   display: block;
   height: 100%;
   font-size: 1.6rem;
@@ -192,29 +192,33 @@ nav a:visited, nav a:hover {
   header {
     margin-bottom: 3rem; } }
 
-nav ul {
+header nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
   font-size: 0; }
-nav li {
+header nav li {
   display: inline-block;
   margin: 0 1.5rem; }
-nav li:last-child {
+header nav li:last-child {
   margin-right: 0; }
-nav a:hover {
+header nav a:hover {
   border-bottom: 2px solid #5c6bc0; }
 
 .mobile-nav {
   line-height: 7.1rem; }
   .mobile-nav button {
     vertical-align: middle; }
-  .mobile-nav span {
-    width: 4rem;
-    height: 4px;
-    display: block;
-    background-color: #333333;
-    vertical-align: middle; }
+
+#menu nav a {
+  padding-left: 2rem; }
+#menu a:hover {
+  padding-left: 2rem;
+  background-color: #ffffff;
+  border-bottom: 2px solid #5c6bc0; }
+#menu .fa {
+  font-size: 2.4rem;
+  color: #5c6bc0; }
 
 .input {
   background-color: #f7f9fc;
@@ -315,14 +319,14 @@ form textarea::-webkit-input-placeholder {
   width: 5rem;
   padding: 0 4px;
   border: 1px solid red;
-  position: relative; }
-  .mini-nav .item1,
-  .mini-nav .item3 {
-    position: absolute; }
-  .mini-nav .item1 {
-    top: 10px; }
-  .mini-nav .item3 {
-    bottom: 10px; }
+  overflow: hidden; }
+  .mini-nav span {
+    width: 4rem;
+    height: 4px;
+    display: block;
+    margin: 5px 0;
+    background-color: #333333;
+    vertical-align: middle; }
 
 .btn:hover, .mini-nav:hover,
 .btn:focus,

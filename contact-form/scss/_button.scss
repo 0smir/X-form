@@ -20,20 +20,30 @@
   width: 5rem;
   padding: 0 4px;
   border: 1px solid red;
-  position: relative;
+  overflow: hidden;
 
-  .item1,
-  .item3{
-    position: absolute;
-  }
 
-  .item1{
-    top: 10px;
-  }
+    span{
+      width: 4rem;
+      height: 4px;
+      display: block;
+      margin: 5px 0;
+      background-color: $mineShaft;
+      vertical-align: middle;
+    }
 
-  .item3{
-    bottom: 10px;
-  }
+  //.item1,
+  //.item3{
+  //  position: absolute;
+  //}
+  //
+  //.item1{
+  //  top: 10px;
+  //}
+  //
+  //.item3{
+  //  bottom: 10px;
+  //}
 
 }
 
