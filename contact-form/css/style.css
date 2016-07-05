@@ -89,17 +89,19 @@ body {
   font-size: 2rem;
   font-family: "Lato Regular", Helvetica, Arial, sans-serif;
   background: #f7f9fc;
-  line-height: 1.7;
+  line-height: 1.7; }
+
+.page {
   padding: 7rem 0; }
   @media (max-width: 991px) {
-    body {
+    .page {
       padding: 5rem 0; } }
   @media (max-width: 767px) {
-    body {
+    .page {
       padding: 4rem 0;
       font-size: 1.7rem; } }
   @media (max-width: 320px) {
-    body {
+    .page {
       padding: 3rem 0;
       font-size: 1.5rem; } }
 
@@ -318,11 +320,15 @@ form textarea::-webkit-input-placeholder {
   color: #5c6bc0; }
 
 .mini-nav {
-  line-height: 5rem;
   height: 5rem;
   width: 5rem;
   padding: 0 4px;
-  border: 1px solid red;
+  border: 1px solid #5c6bc0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  box-shadow: -2px 2px 6px 1px rgba(92, 106, 192, 0.3);
   overflow: hidden; }
   .mini-nav span {
     width: 4rem;
@@ -330,7 +336,7 @@ form textarea::-webkit-input-placeholder {
     display: block;
     margin: 5px 0;
     background-color: #333333;
-    vertical-align: middle; }
+    position: relative; }
 
 .btn:hover, .mini-nav:hover,
 .btn:focus,
