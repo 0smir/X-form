@@ -24,36 +24,47 @@
   overflow: hidden;
 
 
-    span{
-      width: 4rem;
-      height: 4px;
-      display: block;
-      margin: 5px 0;
-      background-color: $mineShaft;
-      position: relative;
-      //transform: rotate(0);
-      //top: 0;
-      //left: 0;
-      //opacity: 1;
-      //transition: none 0.5s ease;
-      //transition-property: transform, top, left, opacity;
-    }
+  span{
+    width: 4rem;
+    height: 4px;
+    display: block;
+    margin: 5px 0;
+    background-color: $mineShaft;
+    position: relative;
+  }
+
+  .item1{
+    -webkit-transition: transform 0.2s linear;
+    -o-transition: transform 0.2s linear;
+    -moz-transition: transform 0.2s linear;
+    transition: transform 0.2s linear;
+  }
+  .item2{
+
+  }
+
+  .item3{
+    -webkit-transition: transform 0.2s linear;
+    -o-transition: transform 0.2s linear;
+    -moz-transition: transform 0.2s linear;
+    transition: transform 0.2s linear;
+  }
+
+  .mm-opened .mini-nav span .item1 {
+    -webkit-transform: rotateZ(45deg);
+    -o-transform: rotateZ(45deg);
+    -moz-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+  }
+
+  .mm-opened .mini-nav span .item3 {
+    -webkit-transform: rotateZ(-45deg);
+    -o-transform: rotateZ(-45deg);
+    -moz-transform: rotateZ(-45deg);
+    transform: rotateZ(-45deg);
+  }
 }
 
-//.mm-opened .mini-nav span .item1 {
-//  transform: rotate(45deg);
-//  top: 7px;
-//}
-//
-// .mm-opened .mini-nav span .item2 {
-//  opacity: 0;
-//   left: -40px;
-//}
-//
-//.mm-opened .mini-nav span .item3 {
-//  transform: rotate( -45deg );
-//  top: -7px;
-//}
 
 .btn:hover,
 .btn:focus{

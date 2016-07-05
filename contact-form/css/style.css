@@ -86,8 +86,7 @@ html {
   font-size: 10px; }
 
 body {
-  font-size: 2rem;
-  font-family: "Lato Regular", Helvetica, Arial, sans-serif;
+  font: 2rem "Lato Regular", Helvetica, Arial, sans-serif;
   line-height: 1.7; }
 
 .page {
@@ -113,9 +112,9 @@ a,
     text-decoration: none; }
 
 p {
-  font-size: 1.7rem;
-  margin-bottom: 0.5rem;
-  font-family: "Lato Regular", Helvetica, Arial, sans-serif; }
+  font: 1.7rem "Lato Regular", Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+  margin-bottom: 0.5rem; }
   @media (max-width: 767px) {
     p {
       font-size: 1.6rem; } }
@@ -140,25 +139,23 @@ p:last-of-type {
 .h6 {
   margin: 0; }
 
-.h1, .h2 {
-  line-height: 1.7; }
-
 .h1 {
-  font-size: 4.2rem;
-  font-family: "Lato Bold Italic", Helvetica, Arial, sans-serif; }
+  font: 4.2rem "Lato Bold Italic", Helvetica, Arial, sans-serif; }
   @media (max-width: 320px) {
     .h1 {
       font-size: 3.8rem; } }
 
 .h2 {
-  font-size: 4rem;
-  font-family: "Lato Bold", Helvetica, Arial, sans-serif; }
+  font: 4rem "Lato Bold", Helvetica, Arial, sans-serif; }
   @media (max-width: 767px) {
     .h2 {
       font-size: 3.6rem; } }
   @media (max-width: 320px) {
     .h2 {
       font-size: 3.2rem; } }
+
+.h1, .h2 {
+  line-height: 1.7; }
 
 .inner-container {
   padding: 8rem 9.7rem;
@@ -336,6 +333,26 @@ form textarea::-webkit-input-placeholder {
     margin: 5px 0;
     background-color: #333333;
     position: relative; }
+  .mini-nav .item1 {
+    -webkit-transition: transform 0.2s linear;
+    -o-transition: transform 0.2s linear;
+    -moz-transition: transform 0.2s linear;
+    transition: transform 0.2s linear; }
+  .mini-nav .item3 {
+    -webkit-transition: transform 0.2s linear;
+    -o-transition: transform 0.2s linear;
+    -moz-transition: transform 0.2s linear;
+    transition: transform 0.2s linear; }
+  .mini-nav .mm-opened .mini-nav span .item1 {
+    -webkit-transform: rotateZ(45deg);
+    -o-transform: rotateZ(45deg);
+    -moz-transform: rotateZ(45deg);
+    transform: rotateZ(45deg); }
+  .mini-nav .mm-opened .mini-nav span .item3 {
+    -webkit-transform: rotateZ(-45deg);
+    -o-transform: rotateZ(-45deg);
+    -moz-transform: rotateZ(-45deg);
+    transform: rotateZ(-45deg); }
 
 .btn:hover, .mini-nav:hover,
 .btn:focus,
