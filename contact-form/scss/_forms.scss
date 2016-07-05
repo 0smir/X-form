@@ -37,7 +37,6 @@
   line-height: 8rem;
   min-height: 8rem;
   text-align: center;
-  //visibility: hidden;
 
   label{
     color: $textViolet;
@@ -62,6 +61,10 @@
   input[type="search"]:focus{
     width: 50%;
   }
+}
+
+header form{
+  visibility: hidden;
 }
 
 form{

@@ -2,9 +2,11 @@ html {
   font-size: 10px; // static
 }
 
+
+
 body{
   font-size: 2rem;
-  font-family: "Lato Regular", sans-serif;
+  font-family: $primeryRegular;
   background: $pastelGray;
   line-height: 1.7;
   padding: 7rem 0;
@@ -19,7 +21,6 @@ a,
 
   &:hover,
   &:focus {
-
     text-decoration: none;
   }
 }
@@ -28,7 +29,7 @@ a,
 
 p {
   font-size: 1.7rem;
-  font-family: "Lato Regular", sans-serif;
+  font-family: $primeryRegular;
 }
 
 p:last-of-type{
@@ -55,12 +56,12 @@ p:last-of-type{
 
 .h1 {
   font-size: 4.2rem;
-  font-family: "Lato Bold Italic", sans-serif;
+  font-family: $primeryBoldItalick;
 }
 
 .h2 {
   font-size: 4rem;
-  font-family: "Lato Bold", sans-serif;
+  font-family: $primeryBold;
 }
 
 

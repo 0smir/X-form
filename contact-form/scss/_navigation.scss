@@ -24,22 +24,23 @@ nav{
     margin-right: 0;
   }
 
-  a:link{
-    @extend %navlink;
-  }
-
+  a:link,
   a:visited{
     @extend %navlink;
   }
-
 
   a:hover{
     @extend %navlink;
     border-bottom: $borderNavLinkHover;
   }
+}
 
-  button{
-    //TODO add styles for button:hover
+.mobile-nav{
+  span{
+    width: 4rem;
+    height: 4px;
+    display: block;
+    margin-bottom: 1rem;
+    background-color: $mineShaft;
   }
-
 }

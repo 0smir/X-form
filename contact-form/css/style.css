@@ -79,12 +79,15 @@
 .active.active {
   color: #bdbdbd; }
 
+.visible.visible {
+  visibility: visible; }
+
 html {
   font-size: 10px; }
 
 body {
   font-size: 2rem;
-  font-family: "Lato Regular", sans-serif;
+  font-family: "Lato Regular", Helvetica, Arial, sans-serif;
   background: #f7f9fc;
   line-height: 1.7;
   padding: 7rem 0; }
@@ -99,7 +102,7 @@ a,
 
 p {
   font-size: 1.7rem;
-  font-family: "Lato Regular", sans-serif; }
+  font-family: "Lato Regular", Helvetica, Arial, sans-serif; }
 
 p:last-of-type {
   padding-bottom: 3rem; }
@@ -117,11 +120,11 @@ p:last-of-type {
 
 .h1 {
   font-size: 4.2rem;
-  font-family: "Lato Bold Italic", sans-serif; }
+  font-family: "Lato Bold Italic", Helvetica, Arial, sans-serif; }
 
 .h2 {
   font-size: 4rem;
-  font-family: "Lato Bold", sans-serif; }
+  font-family: "Lato Bold", Helvetica, Arial, sans-serif; }
 
 .inner-container {
   padding: 8rem 9.7rem;
@@ -131,7 +134,8 @@ p:last-of-type {
   border-radius: 5px;
   box-shadow: 0px 0px 30px 12px rgba(51, 51, 51, 0.1); }
 
-nav a:link, nav a:visited, nav a:hover {
+nav a:link,
+nav a:visited, nav a:hover {
   display: block;
   height: 100%;
   font-size: 1.6rem;
@@ -151,6 +155,13 @@ nav li:last-child {
   margin-right: 0; }
 nav a:hover {
   border-bottom: 2px solid #5c6bc0; }
+
+.mobile-nav span {
+  width: 4rem;
+  height: 4px;
+  display: block;
+  margin-bottom: 1rem;
+  background-color: #333333; }
 
 .input {
   background-color: #f7f9fc;
@@ -199,26 +210,45 @@ nav a:hover {
   #main-search input[type="search"]:focus {
     width: 50%; }
 
+header form {
+  visibility: hidden; }
+
 form input::-webkit-input-placeholder,
 form textarea::-webkit-input-placeholder {
   color: rgba(51, 51, 51, 0.2); }
 
-.btn, .btn-search:hover {
+.btn, .btn:hover,
+.btn:focus, .mini-nav:hover {
   text-align: center;
   font-family: "Lato Bold";
-  font-size: 2.4rem;
   border: 1px solid transparent;
   background-color: transparent; }
 
-.btn-search, .btn-search:hover {
+.btn-search {
   font-size: 1.6rem; }
 
 .btn-send {
   font-size: 2.4rem;
   color: #5c6bc0; }
 
-.btn-search:hover {
-  background: #ffffff;
+.btn:hover, .mini-nav:hover,
+.btn:focus,
+.mini-nav:focus:hover {
+  border: 1px solid #5c6bc0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px; }
+
+.btn-search:hover,
+.btn-search:focus {
+  background: #ffffff; }
+
+.btn-send:hover,
+.btn-send:focus {
+  background: #f7f9fc; }
+
+.mini-nav:hover {
   border: 1px solid #5c6bc0;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;

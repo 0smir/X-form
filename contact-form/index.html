@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -10,10 +12,19 @@
     <div class="page bg-gray">
         <header class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-xs-8 col-sm-4 col-md-3">
                     <h1 class="h1"><a class="logo text-dark-gray" href="#">Palo Alto</a></h1>
                 </div>
-                <nav class="col-md-9">
+                <div class="col-xs-4 hidden-sm hidden-md hidden-lg">
+                    <div class="mobile-nav text-right">
+                        <button class="btn mini-nav">
+                            <span class="item1"></span>
+                            <span class="item2"></span>
+                            <span class="item3"></span>
+                        </button>
+                    </div>
+                </div>
+                <nav class="hidden-xs col-sm-8 col-md-9">
                     <ul class="text-right">
                         <li><a class="block text-uppercase text-bold" href="#">Home</a></li>
                         <li><a class="block text-uppercase text-bold" href="#">About</a></li>
@@ -24,7 +35,7 @@
                         </li>
                     </ul>
                 </nav>
-                <form id="main-search" class="col-md-12" action="#" method="get">
+                <form id="main-search" class="hidden-xs col-sm-12 col-md-12" action="#" method="get">
                     <label for="site-search" class="text-uppercase inline-block">Search</label>
                     <input id="site-search" type="search" class="input inline-block" placeholder="Search">
                     <button class="btn btn-search inline-block"><i class="fa fa-search" aria-hidden="true"></i></button>
@@ -53,6 +64,8 @@
         </main>
 
     </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>

@@ -108,3 +108,9 @@
     color: $iron;
   }
 }
+
+.visible{
+  &.visible{
+    visibility: visible;
+  }
+}
