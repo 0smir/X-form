@@ -1,4 +1,5 @@
 
 contact-form/.idea/workspace.xml
-
 contact-form/.idea/watcherTasks.xml
+contact-form/.idea/**/*.*
+contact-form/.sass-cache/**/*.*
