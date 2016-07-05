@@ -210,15 +210,19 @@ header nav a:hover {
   .mobile-nav button {
     vertical-align: middle; }
 
+#menu .mm-navbar-bottom {
+  height: 45px; }
 #menu nav a {
   padding-left: 2rem; }
 #menu a:hover {
   padding-left: 2rem;
   background-color: #ffffff;
+  border-top: 2px solid #5c6bc0;
   border-bottom: 2px solid #5c6bc0; }
 #menu .fa {
   font-size: 2.4rem;
-  color: #5c6bc0; }
+  color: #5c6bc0;
+  padding-bottom: 3rem; }
 
 .input {
   background-color: #f7f9fc;
