@@ -1,7 +1,7 @@
 //---- general fonts ------
 
 @font-face {
-  font-family: "Lato Regular";
+  font-family: "Lato";
   src: url('../fonts/lato/regular/Lato-Regular.eot');
   src: url('../fonts/lato/regular/Lato-Regular.eot?#iefix') format('embedded-opentype'),
   url('../fonts/lato/regular/Lato-Regular.woff2') format('woff2'),
@@ -12,26 +12,26 @@
 }
 
 @font-face {
-  font-family: "Lato Bold";
+  font-family: "Lato";
   src: url('../fonts/lato/bold/Lato-Bold.eot');
   src: url('../fonts/lato/bold/Lato-Bold.eot?#iefix') format('embedded-opentype'),
   url('../fonts/lato/bold/Lato-Bold.woff2') format('woff2'),
   url('../fonts/lato/bold/Lato-Bold.woff') format('woff'),
   url('../fonts/lato/bold/Lato-Bold.ttf') format('truetype');
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 
 
 
 @font-face {
-  font-family: "Lato Bold Italic";
+  font-family: "Lato";
   src: url('../fonts/lato/bolditalic/Lato-BoldItalic.eot');
   src: url('../fonts/lato/bolditalic/Lato-BoldItalic.eot?#iefix') format('embedded-opentype'),
   url('../fonts/lato/bolditalic/Lato-BoldItalic.woff2') format('woff2'),
   url('../fonts/lato/bolditalic/Lato-BoldItalic.woff') format('woff'),
   url('../fonts/lato/bolditalic/Lato-BoldItalic.ttf') format('truetype');
   font-style: italic;
-  font-weight: normal;
+  font-weight: bold;
 }

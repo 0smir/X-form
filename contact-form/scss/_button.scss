@@ -1,6 +1,6 @@
 .btn{
   text-align: center;
-  font-family: "Lato Bold";
+  font: bold $primeryFont;
   border: $borderTransparent;
   background-color: $backgroundTransparent;
 }

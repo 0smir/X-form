@@ -5,7 +5,8 @@ html {
 
 
 body{
-  font: 2rem $primeryRegular;
+  font: normal 2rem $primeryFont;
+
   line-height: 1.7;
 }
 
@@ -32,7 +33,7 @@ a,
 //------Text-----
 
 p {
-  font: 1.7rem $primeryRegular;
+  font: normal 1.7rem $primeryFont;
   line-height: 1.7;
   margin-bottom: 0.5rem;
   @include breakpoint(small){font-size: 1.6rem;}
@@ -61,12 +62,12 @@ p:last-of-type{
 
 
 .h1 {
-  font: 4.2rem $primeryBoldItalick;
+  font: bold italic 4.2rem $primeryFont;
   @include breakpoint(extrasmall){font-size: 3.8rem;}
 }
 
 .h2 {
-  font: 4rem $primeryBold;
+  font: bold 4rem $primeryFont;
   @include breakpoint(small){font-size: 3.6rem;}
   @include breakpoint(extrasmall){font-size: 3.2rem;}
 }
