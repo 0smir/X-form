@@ -190,11 +190,15 @@ header nav a:visited, header nav a:hover, #menu nav a, #menu a:hover {
   header {
     margin-bottom: 3rem; } }
 
+header nav h1 a {
+  font-family: "Lato Bold Italic", Helvetica, Arial, sans-serif; }
 header nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
   font-size: 0; }
+header nav ul a {
+  font-family: "Lato Bold", Helvetica, Arial, sans-serif; }
 header nav li {
   display: inline-block;
   margin: 0 1.5rem; }

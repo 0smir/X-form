@@ -13,11 +13,20 @@ header{
 }
 
 header nav{
+  h1 a{
+    font-family: $primeryBoldItalick;
+    //font-style: italic;
+  }
+
   ul{
     margin: 0;
     padding: 0;
     list-style: none;
     font-size: 0;
+  }
+
+  ul a{
+    font-family: $primeryBold;
   }
 
   li{
