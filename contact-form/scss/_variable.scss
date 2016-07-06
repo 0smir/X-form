@@ -8,7 +8,7 @@ $corduroy: #585858; //color of paragraph
 $mercury: #eeeeee; // line
 $concreteLight: #f7f9fc; // inputs bg
 $mediumslateblue: #5c6bc0; // button-submit text
-
+$mediumslateblueTint: rgba(92, 106, 192, 0.5);
 
 //----Text colors ---
 
@@ -24,10 +24,18 @@ $borderNavLink: 2px solid transparent;
 $borderNavLinkHover: 2px solid $mediumslateblue;
 $borderForm: 2px solid $mercury;
 $borderInput: 1px solid $mediumslateblue;
+$borderVioletTint: 1px solid $mediumslateblueTint;
 
 // ----Shadow---
 $shadow: 0px 0px 30px 12px rgba(51, 51, 51, 0.1);
 $buttonShadow: -2px 2px 6px 1px rgba(92, 106, 192, 0.3);
+$shadowVioletInner: inset 0px 2px 1px 1px rgba(255, 255, 255, 0.8),
+                    inset 1px 0px 1px 1px rgba(255, 255, 255, 0.8),
+                    inset -2px -1px 11px 6px rgba(92, 106, 192, 0.4),
+                    inset 0px -5px 6px 7px rgba(92, 106, 192, 0.2),
+                    inset -1px -2px 1px 2px rgba(92, 106, 192, 0.3);
+$inputShadow: inset 1px 2px 9px 1px rgba(92, 106, 192, 0.2),
+              inset -4px -4px 5px 2px rgba(255, 255, 255, 0.9);
 
 // ---- Padding----
 

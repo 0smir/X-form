@@ -1,7 +1,7 @@
 .input{
   background-color: $concreteLight;
   color: $corduroy;
-  border: $borderTransparent;
+  border: $borderVioletTint;
   margin-bottom: 3rem;
   padding: 1.5rem 3rem;
   line-height: 1.2;
@@ -10,6 +10,9 @@
   @include breakpoint(extrasmall){padding: 1rem 1.5rem;}
 }
 
+.input:hover{
+  box-shadow: $inputShadow;
+}
 
 
 #contact-us{
@@ -58,7 +61,7 @@
   }
 
   input[type="search"]{
-    border: $borderInput;
+    border: $borderVioletTint;
     margin-right: 2rem;
     transition: width .3s ease;
     width: 30%;
